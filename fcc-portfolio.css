@@ -1,0 +1,21 @@
+﻿body
+{
+}
+a {
+    text-decoration: none;
+}
+/*height of welcome section should be equal to the height of the viewport, navbar always be at top of viewport, at least one media query*/
+#navbar {
+    text-decoration: none;
+}
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+#navbar li {
+    list-style: none;
+}
+#welcome-section {
+    background-color: aquamarine;
+    text-align: center;
+}
