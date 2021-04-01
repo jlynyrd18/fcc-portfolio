@@ -4,18 +4,64 @@
 a {
     text-decoration: none;
 }
+h1 {
+    font-size: 54px;
+}
+li {
+    font-size: 28px;
+}
+img {
+    width: 35%;
+}
 /*height of welcome section should be equal to the height of the viewport, navbar always be at top of viewport, at least one media query*/
 #navbar {
     text-decoration: none;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 10;
+    width: 100%;
 }
 #navbar a {
     text-decoration: none;
     color: black;
+    padding: 5px;
+    display: block;
+}
+#navbar a:hover {
+    background-color: silver;
+}
+#navbar ul {
+    display: flex;
+    margin-right: 5px;
 }
 #navbar li {
     list-style: none;
 }
 #welcome-section {
     background-color: aquamarine;
-    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
+#welcome-section p {
+    font-size: 42px;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+#container p {
+     font-size: 24px;
+ }
