@@ -7,11 +7,13 @@ a {
 h1 {
     font-size: 54px;
 }
-li {
+h2 {
+    text-align: center;
+    text-decoration: underline;
     font-size: 28px;
 }
-img {
-    width: 35%;
+li {
+    font-size: 28px;
 }
 /*height of welcome section should be equal to the height of the viewport, navbar always be at top of viewport, at least one media query*/
 #navbar {
@@ -55,13 +57,19 @@ img {
 }
 #container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
 }
 #container p {
      font-size: 24px;
  }
+#contact {
+    background-color: aliceblue;
+}
+@media (max-width: 600px) {
+    #contact {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+}
